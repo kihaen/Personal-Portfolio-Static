@@ -1,2 +1,2 @@
-# reactResumePage
-This is my personal website
+# React Personal Portfolio
+This is my personal website built using a template
