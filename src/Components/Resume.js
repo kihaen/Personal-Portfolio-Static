@@ -48,28 +48,55 @@ class Resume extends Component {
 
          <div className="nine columns main-col">
           {work}
+        
         </div>
-    </div>
+      </div>
 
 
 
-      <div className="row skill">
+      <div className="row skills">
 
          <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>My Stack</span></h1>
          </div>
 
          <div className="nine columns main-col">
 
-            <p>{skillmessage}
-            </p>
+            <p className="lead center text-container">{skillmessage}</p>
 
-				<div className="bars">
+				{/* <div className="bars">
 				   <ul className="skills">
 					  {skills}
 					</ul>
-				</div>
-			</div>
+				</div> */}
+			    </div>
+        <ul class="bgrid-quarters s-bgrid-thirds cf">
+          <div class="columns feature-item">
+            <img class="skill" alt="Git placeholder" src ="images/tech/react.jpg"></img>
+            <h5>React</h5>
+            <p>source control</p>
+          </div>
+          <div class="columns feature-item">
+            <img class="skill" alt="Git placeholder" src ="images/tech/java.jpg"></img>
+            <h5>Java</h5>
+            <p>source control</p>
+          </div>
+          <div class="columns feature-item">
+            <img class="skill" alt="Git placeholder" src ="images/tech/node.jpg"></img>
+            <h5>Nodejs</h5>
+            <p>source control</p>
+          </div>
+          <div class="columns feature-item">
+            <img class="skill" alt="Git placeholder" src ="images/tech/aws.jpg"></img>
+            <h5>AWS</h5>
+            <p>source control</p>
+          </div>
+          <div class="columns feature-item">
+            <img class="skill" alt="Git placeholder" src ="images/tech/git.jpg"></img>
+            <h5>Git</h5>
+            <p>source control</p>
+          </div>
+        </ul>
       </div>
    </section>
     );
