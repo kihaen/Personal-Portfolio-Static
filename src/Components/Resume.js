@@ -74,12 +74,16 @@ class Resume extends Component {
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/react.jpg"></img>
             <h5>React</h5>
-            <p>source control</p>
+            <p>I first started learning React as per a client requirement for upcoming project,
+              but i quickly fell in the simplicity and efficiencu that react introduced to javascript.
+            </p>
           </div>
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/java.jpg"></img>
             <h5>Java</h5>
-            <p>source control</p>
+            <p>Java is the language i used throughout all of college, initially my worst language.
+              I now have a deep respect for Java, and find myself reminiscing on how difficult it originally was to learn.
+            </p>
           </div>
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/node.jpg"></img>
