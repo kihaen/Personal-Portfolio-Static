@@ -93,7 +93,9 @@ class Resume extends Component {
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/aws.jpg"></img>
             <h5>AWS</h5>
-            <p>source control</p>
+            <p>Amazon Web Services is how i developed most of my backend applications. Using Lambda
+              to execute queries and building API's with python.
+            </p>
           </div>
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/git.jpg"></img>
