@@ -88,7 +88,10 @@ class Resume extends Component {
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/node.jpg"></img>
             <h5>Nodejs</h5>
-            <p>source control</p>
+            <p>Node is the lastest tech i am studying with most of my business built in AWS, i did
+              not frequently get to work with server sided languages. However with my familiarity with
+              Javascript Node JS is my primary go to, for server-sided framework.
+            </p>
           </div>
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/aws.jpg"></img>
@@ -100,7 +103,9 @@ class Resume extends Component {
           <div class="columns feature-item">
             <img class="skill" alt="Git placeholder" src ="images/tech/git.jpg"></img>
             <h5>Git</h5>
-            <p>source control</p>
+            <p>Source control i use for most of my applications. I haved used Git so far on all
+              of my project.  
+            </p>
           </div>
         </ul>
       </div>
