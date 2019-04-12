@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 
 class Resume extends Component {
   render() {
-
+    let skillData = [] 
+    if(this.props.data){
+      skillData = this.props.data.skills.map((tech)=>{
+        return(
+          <div class="columns feature-item" key={tech.name}>
+                <img class="skill" alt="Image placeholder" src ={tech.source}></img>
+                <h5 style={{'textAlign':'left'}}>{tech.name}</h5>
+                <p>{tech.description}</p>
+          </div>
+        )
+      })
+    }
     if(this.props.data){
       var skillmessage = this.props.data.skillmessage;
       var education = this.props.data.education.map(function(education){
@@ -61,52 +72,11 @@ class Resume extends Component {
          </div>
 
          <div className="nine columns main-col">
-
             <p className="lead center text-container">{skillmessage}</p>
-
-				{/* <div className="bars">
-				   <ul className="skills">
-					  {skills}
-					</ul>
-				</div> */}
 			    </div>
+
         <ul class="bgrid-quarters s-bgrid-thirds cf">
-          <div class="columns feature-item">
-            <img class="skill" alt="Git placeholder" src ="images/tech/react.jpg"></img>
-            <h5>React</h5>
-            <p>I first started learning React as per a client requirement for upcoming project,
-              but i quickly fell in the simplicity and efficiencu that react introduced to javascript.
-            </p>
-          </div>
-          <div class="columns feature-item">
-            <img class="skill" alt="Git placeholder" src ="images/tech/java.jpg"></img>
-            <h5>Java</h5>
-            <p>Java is the language i used throughout all of college, initially my worst language.
-              I now have a deep respect for Java, and find myself reminiscing on how difficult it originally was to learn.
-            </p>
-          </div>
-          <div class="columns feature-item">
-            <img class="skill" alt="Git placeholder" src ="images/tech/node.jpg"></img>
-            <h5>Nodejs</h5>
-            <p>Node is the lastest tech i am studying with most of my business built in AWS, i did
-              not frequently get to work with server sided languages. However with my familiarity with
-              Javascript Node JS is my primary go to, for server-sided framework.
-            </p>
-          </div>
-          <div class="columns feature-item">
-            <img class="skill" alt="Git placeholder" src ="images/tech/aws.jpg"></img>
-            <h5>AWS</h5>
-            <p>Amazon Web Services is how i developed most of my backend applications. Using Lambda
-              to execute queries and building API's with python.
-            </p>
-          </div>
-          <div class="columns feature-item">
-            <img class="skill" alt="Git placeholder" src ="images/tech/git.jpg"></img>
-            <h5>Git</h5>
-            <p>Source control i use for most of my applications. I haved used Git so far on all
-              of my project.  
-            </p>
-          </div>
+          {skillData}
         </ul>
       </div>
    </section>

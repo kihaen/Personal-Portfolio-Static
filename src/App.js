@@ -29,7 +29,7 @@ class App extends Component {
       dataType:'json',
       cache: false,
       success: function(data){
-        console.log(data)
+        //console.log(data)
         this.setState({resumeData: data});
       }.bind(this),
       error: function(xhr, status, err){

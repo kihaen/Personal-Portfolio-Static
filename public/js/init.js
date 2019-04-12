@@ -146,30 +146,33 @@
       var contactSubject = $('#contactForm #contactSubject').val();
       var contactMessage = $('#contactForm #contactMessage').val();
 
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
+      const dataJson = {
+         'contactName' : contactName,
+         'contactEmail' : contactEmail,
+         'contactSubject' : contactSubject,
+         'contactMessage' : contactMessage
+      }
+
+      console.log(JSON.stringify(dataJson))
 
       $.ajax({
-
 	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
+	      url: " https://rgz0cmfy41.execute-api.us-east-1.amazonaws.com/Test",
+         data: JSON.stringify(dataJson),
+         crossDomain: true,
+         dataType: 'json',
 	      success: function(msg) {
-
-            // Message was sent
             if (msg == 'OK') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();   
             }
-            // There was an error
             else {
                $('#image-loader').fadeOut();
                $('#message-warning').html(msg);
 	            $('#message-warning').fadeIn();
             }
-
 	      }
 
       });
