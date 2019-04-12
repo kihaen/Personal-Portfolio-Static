@@ -153,7 +153,7 @@
          'contactMessage' : contactMessage
       }
 
-      console.log(JSON.stringify(dataJson))
+      // console.log(JSON.stringify(dataJson))
 
       $.ajax({
 	      type: "POST",
@@ -161,19 +161,24 @@
          data: JSON.stringify(dataJson),
          crossDomain: true,
          dataType: 'json',
-	      success: function(msg) {
-            if (msg == 'OK') {
+	      success: function(data) {
+            if (data == 'OK') {
+               console.log(data)
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
                $('#message-success').fadeIn();   
-            }
+            }   
             else {
+               console.log(data)
                $('#image-loader').fadeOut();
                $('#message-warning').html(msg);
 	            $('#message-warning').fadeIn();
             }
-	      }
+         },
+         error: function(xhr, status, err){
+            console.log(err);
+         }
 
       });
       return false;
