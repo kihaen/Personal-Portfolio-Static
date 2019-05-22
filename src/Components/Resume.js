@@ -7,7 +7,7 @@ class Resume extends Component {
       skillData = this.props.data.skills.map((tech)=>{
         return(
           <div class="columns feature-item" key={tech.name}>
-                <img class="skill" alt="Image placeholder" src ={tech.source}></img>
+                <img class="skill" alt="placeholder" src ={tech.source}></img>
                 <h5 style={{'textAlign':'left'}}>{tech.name}</h5>
                 <p>{tech.description}</p>
           </div>
@@ -27,7 +27,7 @@ class Resume extends Component {
             <p>{work.description}</p>
         </div>
       })
-      var skills = this.props.data.skills.map(function(skills){
+      this.props.data.skills.map(function(skills){
         var className = 'bar-expand '+skills.name.toLowerCase();
         return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
       })
