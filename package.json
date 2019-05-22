@@ -4,13 +4,15 @@
   "private": true,
   "homepage": "https://www.kihaen.com",
   "dependencies": {
+    "express": "^4.16.4",
     "gh-pages": "^2.0.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.3.5",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
