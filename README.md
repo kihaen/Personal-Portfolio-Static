@@ -15,8 +15,3 @@ gh-pages was used build and deploy.
 
 This application was built on top of Create-React-App and is hosted statically on github.
 
-## Credits
-
-#### HTML Design Template
-<a href="https://www.styleshout.com/free-templates/ceevee/">Ceevee Template by Styleshout</a>
-
